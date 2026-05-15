@@ -1,4 +1,6 @@
 export default function Home() {
+  const name = process.env.NEXT_PUBLIC_STUDENT_NAME;
+  
   return (
     <main style={{
       display: "flex",
@@ -23,7 +25,7 @@ export default function Home() {
         </h1>
         <hr style={{ border: "1px solid rgba(255,255,255,0.4)", margin: "20px 0" }} />
         <p style={{ fontSize: "1.3rem", margin: "10px 0" }}>
-          👩‍💻 <strong>Name:</strong> Zainab
+          👩‍💻 <strong>Name:</strong> {name || "Zaynab"}
         </p>
         <p style={{ fontSize: "1.3rem", margin: "10px 0" }}>
           🎓 <strong>Roll:</strong> 01-131232-095
